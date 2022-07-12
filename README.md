@@ -29,3 +29,11 @@ pretty_print() : None
 The trie data structure holds the string as a sequence of characters in a tree. Every node of the tree represents a character in the string and the leaf nodes represent the end of the string.
 
 The radix trie data structure is also a trie but instead of storing every charter in different nodes, it compresses the charters that has only one child. With this way we gain some performance in practice.
+
+## Applications of Trie
+
+- Autocomplete
+- Spell Checkers
+- String similarity search
+- String sorting
+- T9 predictive text search
