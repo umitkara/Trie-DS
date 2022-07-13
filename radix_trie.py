@@ -22,7 +22,7 @@ class RTEdge:
     Edge of a Radix Trie.
     
     Attributes:
-        label: Character or string of characters that represents the edge. The labal holds the information in this implementation.
+        label: Character or string of characters that represents the edge. The label holds the information in this implementation.
                A label holds at least one character. If the destination node is a key node, leaf, the label and it's ancestors unite to form a word.
         destination: Node that is the destination of the edge.
     """
@@ -60,7 +60,7 @@ class RadixTrie:
             bool: True if the word is found, False otherwise.
         """
         if word == '':
-            # if word is empty recusion completed. return the key_node of the node.
+            # if word is empty recursion completed. return the key_node of the node.
             return node.key_node
         # match the first edge of the word to the node.
         (edge, commonPrefix, word_suffix, edge_suffix) = self._matchEdge(node, word)
